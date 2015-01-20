@@ -1,0 +1,57 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:background="#0099cc"
+    tools:context=".FullscreenActivity"
+    android:id="@+id/activity_fullscreen">
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+
+    <!-- This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows. -->
+
+    <Button
+        android:layout_width="600dp"
+        android:layout_height="85dp"
+        android:text="@string/button_string"
+        android:id="@+id/down_button"
+        android:layout_gravity="center_horizontal|bottom"
+        android:visibility="invisible"
+        android:onClick="buttonClick"
+        />
+
+    <Button
+        android:layout_width="595dp"
+        android:layout_height="85dp"
+        android:text="Up"
+        android:id="@+id/up_button"
+        android:layout_gravity="center_horizontal|top"
+        android:visibility="invisible"
+        />
+
+    <Button
+        android:layout_width="155dp"
+        android:layout_height="147dp"
+        android:text="Left"
+        android:id="@+id/left_button"
+        android:layout_gravity="left|center_vertical"
+        android:visibility="invisible"
+        />
+
+    <Button
+        android:layout_width="155dp"
+        android:layout_height="147dp"
+        android:text="Right"
+        android:id="@+id/right_button"
+        android:layout_gravity="right|center_vertical"
+        android:visibility="invisible"
+        />
+
+    <TextView
+        android:layout_width="96dp"
+        android:layout_height="52dp"
+        android:text="@string/status_string"
+        android:id="@+id/text_test"
+        android:layout_gravity="center" />
+</FrameLayout>
