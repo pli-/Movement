@@ -17,6 +17,7 @@ public class MainActivity extends ActionBarActivity {
         setContentView(R.layout.activity_main);
 
         Button down_button = (Button) findViewById(R.id.down_button);
+        Button up_button = (Button) findViewById(R.id.up_button);
 
         down_button.setOnClickListener(
                 new Button.OnClickListener() {
@@ -29,6 +30,27 @@ public class MainActivity extends ActionBarActivity {
         );
 
         down_button.setOnLongClickListener(
+                new Button.OnLongClickListener() {
+                    public boolean onLongClick(View v) {
+                        TextView text_test =
+                                (TextView)findViewById(R.id.text_test);
+                        text_test.setText("Long button click");
+                        return true;
+                    }
+                }
+        );
+
+        up_button.setOnClickListener(
+                new Button.OnClickListener() {
+                    public void onClick(View v) {
+                        TextView text_test =
+                                (TextView)findViewById(R.id.text_test);
+                        text_test.setText("Button clicked");
+                    }
+                }
+        );
+
+        up_button.setOnLongClickListener(
                 new Button.OnLongClickListener() {
                     public boolean onLongClick(View v) {
                         TextView text_test =
