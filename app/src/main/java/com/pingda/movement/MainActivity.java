@@ -18,6 +18,8 @@ public class MainActivity extends ActionBarActivity {
 
         Button down_button = (Button) findViewById(R.id.down_button);
         Button up_button = (Button) findViewById(R.id.up_button);
+        Button left_button = (Button) findViewById(R.id.down_button);
+        Button right_button = (Button) findViewById(R.id.up_button);
 
         down_button.setOnClickListener(
                 new Button.OnClickListener() {
@@ -51,6 +53,48 @@ public class MainActivity extends ActionBarActivity {
         );
 
         up_button.setOnLongClickListener(
+                new Button.OnLongClickListener() {
+                    public boolean onLongClick(View v) {
+                        TextView text_test =
+                                (TextView)findViewById(R.id.text_test);
+                        text_test.setText("Long button click");
+                        return true;
+                    }
+                }
+        );
+        
+        left_button.setOnClickListener(
+                new Button.OnClickListener() {
+                    public void onClick(View v) {
+                        TextView text_test =
+                                (TextView)findViewById(R.id.text_test);
+                        text_test.setText("Button clicked");
+                    }
+                }
+        );
+
+        left_button.setOnLongClickListener(
+                new Button.OnLongClickListener() {
+                    public boolean onLongClick(View v) {
+                        TextView text_test =
+                                (TextView)findViewById(R.id.text_test);
+                        text_test.setText("Long button click");
+                        return true;
+                    }
+                }
+        );
+        
+        right_button.setOnClickListener(
+                new Button.OnClickListener() {
+                    public void onClick(View v) {
+                        TextView text_test =
+                                (TextView)findViewById(R.id.text_test);
+                        text_test.setText("Button clicked");
+                    }
+                }
+        );
+
+        right_button.setOnLongClickListener(
                 new Button.OnLongClickListener() {
                     public boolean onLongClick(View v) {
                         TextView text_test =
