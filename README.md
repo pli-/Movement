@@ -5,7 +5,6 @@ Currently a landscape android app with buttons
 
 Things to add 
 Multiple page layout, buttons to control from one page to the next
-Adding an image or an object
 Trying to draw a rectangle using ondraw
 Being able to manipulate the object/image on the screen
 tie buttons to velocity and acceleration of the object/image
